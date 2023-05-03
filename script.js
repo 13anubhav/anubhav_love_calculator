@@ -15,7 +15,7 @@ loveForm.addEventListener('submit', (e) => {
 	})
 	.then(response => response.json())
 	.then(data => {
-		result.textContent = `${fname} and ${sname} have a love percentage of ${data.percentage}% and a ${data.result} relationship!`;
+		result.textContent = `${fname} and ${sname} have a love percentage of ${data.percentage}%.    ${data.result}. Wish you all the best for your new Relationship!`;
 	})
 	.catch(error => console.error(error));
 });
